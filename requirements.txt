@@ -1,9 +1,7 @@
-dash==2.6.0
+dash
 pandas
 requests
 beautifulsoup4
 plotly
 numpy
 gunicorn
-
-
