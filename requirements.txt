@@ -1,9 +1,8 @@
 dash==2.6.0
 pandas
-requests==2.26.0
-beautifulsoup4==4.10.0
-dash==2.0.0
-plotly==5.3.1
+requests
+beautifulsoup4
+plotly
 numpy
 gunicorn
 
