@@ -73,23 +73,12 @@ app.layout = html.Div([
     
     html.Div(id='total-arrests-container', style={'textAlign': 'center', 'fontSize': 10, 'color': 'black'}),
     html.Div(id='percent-change-container', style={'textAlign': 'center', 'fontSize': 10}),
-    
-    html.Div([
-        dcc.Graph(id='fare-evasion-graph', config={'responsive': True}, style={'width': '100%', 'display': 'inline-block'}),
-        dcc.Graph(id='age-evasion-graph', config={'responsive': True}, style={'width': '100%', 'display': 'inline-block'}),
-        dcc.Graph(id='gender-evasion-graph', config={'responsive': True}, style={'width': '100%', 'display': 'inline-block'}),
-        dcc.Graph(id='top-stations-graph', config={'responsive': True}, style={'width': '100%', 'display': 'inline-block'}),
-        dcc.Graph(id='borough-counts-graph', config={'responsive': True}, style={'width': '100%', 'display': 'inline-block'})
-    ], style={'display': 'flex', 'flexDirection': 'column', 'alignItems': 'center', 'width': '100%'}),
-    html.Style("""
-        @media only screen and (max-width: 600px) {
-            .dash-graph {
-                width: 100% !important;
-                display: block !important;
-            }
-        }
-    """)
-], style={'padding': '20px'})
+    dcc.Graph(id='fare-evasion-graph', style={'width': '33%', 'display': 'inline-block'}),
+    dcc.Graph(id='age-evasion-graph', style={'width': '33%', 'display': 'inline-block'}),
+    dcc.Graph(id='gender-evasion-graph', style={'width': '33%', 'display': 'inline-block'}),
+    dcc.Graph(id='top-stations-graph', style={'width': '50%', 'display': 'inline-block'}),
+    dcc.Graph(id='borough-counts-graph', style={'width': '50%', 'display': 'inline-block'})
+])
 
 # Define categories
 race = ["AMER IND", "ASIAN/PAC.ISL", "BLACK", "HISPANIC", "UNKNOWN", "WHITE"]
